@@ -1,0 +1,7 @@
+FROM node:latest
+
+COPY src /usr/src/app
+
+WORKDIR /usr/src/app
+
+CMD ["node", "app.js"]

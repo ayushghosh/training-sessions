@@ -1,3 +1,3 @@
-docker run hello-world
+docker build -t node_standalone:v1 .
 
 
