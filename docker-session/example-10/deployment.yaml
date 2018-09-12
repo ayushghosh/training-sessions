@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: node-example-10
+spec:
+  replicas: 5
+  template:
+    metadata:
+      labels:
+        app: node-example-10
+    spec:
+      containers:
+        - name: node-example-10
+          image: node_example:10
+          ports:
+            - containerPort: 3000

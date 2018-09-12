@@ -5,6 +5,6 @@ COPY src /usr/src/app
 
 WORKDIR /usr/src/app
 
-EXPOSE 3000
+EXPOSE 4000
 
-ENTRYPOINT node app.js
+ENTRYPOINT node call_hello_world.js

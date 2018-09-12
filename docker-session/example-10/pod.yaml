@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-example-10
+  labels:
+    name: node-example-10
+spec:
+  containers:
+  - name: node-example-10
+    image: node_example:10
+    ports:
+    - containerPort: 3000

@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-example-11
+  labels:
+    name: node-example-11
+spec:
+  containers:
+  - name: hello-world
+    image: hello_world:v1
+    ports:
+    - containerPort: 3000
+  - name: call-hello-world
+    image: call_hello_world:v1
+    ports:
+    - containerPort: 4000
